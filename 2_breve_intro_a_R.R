@@ -7,7 +7,7 @@
 # control + enter para mandar pro terminal abaixo
 # Se > quer dizer o terminal esta pronto
 # Se + quer dizer que ficou esperando pro ex. fechar algum parentese
-
+2 + 2
 # 2. o terminal de R (Console)
 # um terminal do computador
 
@@ -15,12 +15,13 @@
 # Environment"Objetos guardados na memória
 # vc guarda objetos na memória com o comando <-
 # ex.
+
 numero <- 3
 # deve aparecer numero e o valor 3 na aba environment.
 
 # Historia
 
-# pacotes
+# pacotes - CRAN install.packages("xxx")
 
 # Files
 # Um navegador de arquivos
@@ -32,8 +33,10 @@ numero <- 3
 # o help vc chama com ? ou help()
 # Carrega os pacotes
 library(gfwr)
+
 # o help
 help("get_vessel_info")
+
 # DEVE APARECER NA ABA HELP
 # sempre na mesma estrutura
 # Descricao
@@ -70,6 +73,7 @@ class(3L) #numeros inteiros, nao vamos usar
 
 # vetores sao criados concatenando com a funcao c()
 3
+
 c(3, 2, 1)
 objeto <- c(3, 2, 1)
 class(objeto)

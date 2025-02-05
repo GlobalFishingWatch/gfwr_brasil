@@ -26,7 +26,7 @@ get_event(event_type = "PORT_VISIT",
 get_event(event_type = "PORT_VISIT",
           vessels = c("2ca1c3012-2271-15cd-ea08-2e536333f615"),
           start_date = "2017-01-26",
-          end_date = "2017-12-31",
+          end_date = "2022-12-31",
           confidence = c(3), # only for port visits
           key = gfw_auth())
 

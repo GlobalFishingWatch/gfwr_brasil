@@ -1,6 +1,7 @@
 library(gfwr)
 library(tidyr)
 library(dplyr)
+
 # Começamos com o help da funcao
 # Uma busca simples
 # primeiro parametro é query
@@ -30,6 +31,8 @@ info_vessel["dataset"]
 # 1 Informacao de AIS em selfReportedInfo:
 
 info_vessel$selfReportedInfo
+info_vessel$selfReportedInfo$ssvid
+info_vessel$selfReportedInfo$imo
 names(info_vessel$selfReportedInfo)
 View(info_vessel$selfReportedInfo)
 
@@ -93,6 +96,8 @@ info_vessel$selfReportedInfo[c("transmissionDateFrom", "transmissionDateTo", "ss
 # tem outros argumentos na funcao
 
 info_vessel$selfReportedInfo$vesselId[4] #seleciona o quarto elemento da coluna vesselId
+
+
 id_test <- info_vessel$selfReportedInfo$vesselId[4] #seleciona o quarto elemento da coluna vesselId
 id_test
 get_vessel_info(search_type = "id", ids = id_test) #aí só volta a unica id associada

@@ -34,7 +34,7 @@ map_effort_light <- c("#ffffff", "#eeff00", "#3b9088","#0c276c")
 
 
 start_date <- '2021-01-01'
-end_date <- '2021-03-31'
+end_date <- '2021-04-01'
 
 # Nossa EEZ é 8464
 get_region_id(region_name = "Brazil", region_source = "EEZ")
@@ -94,7 +94,7 @@ fishing_effort <- get_raster(spatial_resolution = 'LOW',
 
 # O que acontece se seu pedido devolve erro 524?
 # usar
-fishing_effort <- get_last_report()
+# fishing_effort <- get_last_report()
 
 
 fishing_effort %>%
